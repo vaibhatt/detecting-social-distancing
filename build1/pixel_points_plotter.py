@@ -1,6 +1,6 @@
 import cv2
 import numpy as np
-cap = cv2.VideoCapture('pedestrians.mp4')
+cap = cv2.VideoCapture('pedestrians.mp4') 
 ix, iy = -1,-1
 
 def mouse_pixel_tracker(event, x, y, flags, param):
@@ -27,3 +27,8 @@ while(1):
         break
 
 cv2.destroyAllWindows()
+
+
+
+# compiled and coded by GunH-colab
+# The above .py is for printing the pixel points clicked on a video
