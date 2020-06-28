@@ -80,11 +80,12 @@ class social_distancing_detector:
 
             for i in range(len(center)):
                 for j in range(len(center)):
-                    close = self.Check(center[i], center[j])
+                    if i!=j:
+                        close = self.Check(center[i], center[j])
 
-                    if close:         
-                        status[i] = True
-                        status[j] = True
+                        if close:         
+                            status[i] = True
+                            status[j] = True
             index = 0
 
             for i in flat_box:
